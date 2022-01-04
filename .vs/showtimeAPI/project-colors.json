@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2924d12d-b212-46a7-8171-1cafbd2db859": {
+      "ProjectGuid": "2924d12d-b212-46a7-8171-1cafbd2db859",
+      "DisplayName": "showtimeAPI",
+      "ColorIndex": 0
+    },
+    "9278e792-ffee-4848-ae9b-f3e0b6598242": {
+      "ProjectGuid": "9278e792-ffee-4848-ae9b-f3e0b6598242",
+      "DisplayName": "Domain",
+      "ColorIndex": 1
+    },
+    "0e2a0fd7-1252-4d76-aaf7-065a058feea5": {
+      "ProjectGuid": "0e2a0fd7-1252-4d76-aaf7-065a058feea5",
+      "DisplayName": "Modelo.Application",
+      "ColorIndex": 2
+    },
+    "522d8ce4-7f10-46f5-a3e5-ec61fa00789b": {
+      "ProjectGuid": "522d8ce4-7f10-46f5-a3e5-ec61fa00789b",
+      "DisplayName": "ModeloDomain",
+      "ColorIndex": 3
+    },
+    "6fb58da3-1f69-43e6-8684-275c06d79e91": {
+      "ProjectGuid": "6fb58da3-1f69-43e6-8684-275c06d79e91",
+      "DisplayName": "ModeloService",
+      "ColorIndex": 4
+    },
+    "5247c1e3-13c5-4439-b4e7-ccc2a2c2017a": {
+      "ProjectGuid": "5247c1e3-13c5-4439-b4e7-ccc2a2c2017a",
+      "DisplayName": "ModeloInfraData",
+      "ColorIndex": 5
+    },
+    "a7ac5ad7-0238-43b1-9419-51e609d2c256": {
+      "ProjectGuid": "a7ac5ad7-0238-43b1-9419-51e609d2c256",
+      "DisplayName": "Context",
+      "ColorIndex": 6
+    },
+    "5105236f-5f11-4568-b1dc-cb953e3d01ed": {
+      "ProjectGuid": "5105236f-5f11-4568-b1dc-cb953e3d01ed",
+      "DisplayName": "Showtime.API",
+      "ColorIndex": 7
+    },
+    "3bab870d-8cfe-4cef-9a18-1af05174d0ff": {
+      "ProjectGuid": "3bab870d-8cfe-4cef-9a18-1af05174d0ff",
+      "DisplayName": "Showtime.Infra.Data",
+      "ColorIndex": 8
+    },
+    "b45c8ba2-b65d-4792-a310-ec6995581b03": {
+      "ProjectGuid": "b45c8ba2-b65d-4792-a310-ec6995581b03",
+      "DisplayName": "Showtime.Domain",
+      "ColorIndex": 9
+    },
+    "a46c4998-92a0-4058-be28-066b61ce0b32": {
+      "ProjectGuid": "a46c4998-92a0-4058-be28-066b61ce0b32",
+      "DisplayName": "Showtime.Service",
+      "ColorIndex": 10
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 11
+}

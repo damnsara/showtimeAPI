@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EECt9zkOfYZTVpqeAijQagCLH1Cjo9i+NZS2OQTb6pG/D+gZnU80HbHYfnQg1/cmAHhUSHaCc0vI15zNWuCtmg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sarai\\source\\repos\\showtimeAPI\\Showtime.Domain\\Showtime.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sarai\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512"
+  ],
+  "logs": []
+}
