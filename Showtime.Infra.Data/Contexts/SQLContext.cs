@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Showtime.Domain.Entities;
-using Showtime.Infra.Data.Mapping;
+using Showtime.Infra.Data.Mappings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,12 +17,14 @@ namespace Showtime.Infra.Data.Contexts
 
         }
         public DbSet<Show> Shows { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Show>(new ShowMap().Configure);
+            modelBuilder.Entity<User>(new UserMap().Configure);
         }
 
 

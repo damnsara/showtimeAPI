@@ -7,7 +7,7 @@ using Showtime.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Showtime.Infra.Data.Mapping
+namespace Showtime.Infra.Data.Mappings
 {
     public class ShowMap : IEntityTypeConfiguration<Show>
     {

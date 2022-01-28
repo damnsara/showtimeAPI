@@ -60,7 +60,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Arquivos Diversos",
       "ColorIndex": -1
+    },
+    "16601521-683d-4ef2-a0a3-84e91a911669": {
+      "ProjectGuid": "16601521-683d-4ef2-a0a3-84e91a911669",
+      "DisplayName": "Showtime.Shared",
+      "ColorIndex": 11
+    },
+    "368a49c8-6367-4102-aa97-993e7e9bec95": {
+      "ProjectGuid": "368a49c8-6367-4102-aa97-993e7e9bec95",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 12
+    },
+    "3cde1c41-2d51-4254-8e3a-f376f732478f": {
+      "ProjectGuid": "3cde1c41-2d51-4254-8e3a-f376f732478f",
+      "DisplayName": "Showtime.Settings",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 14
 }

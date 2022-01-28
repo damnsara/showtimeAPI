@@ -1,0 +1,15 @@
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\bin\Debug\net5.0\Showtime.Infra.Data.deps.json
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\bin\Debug\net5.0\Showtime.Infra.Data.dll
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\bin\Debug\net5.0\ref\Showtime.Infra.Data.dll
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\bin\Debug\net5.0\Showtime.Infra.Data.pdb
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\bin\Debug\net5.0\Showtime.Domain.dll
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\bin\Debug\net5.0\Showtime.Domain.pdb
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\obj\Debug\net5.0\Showtime.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\obj\Debug\net5.0\Showtime.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\obj\Debug\net5.0\Showtime.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\obj\Debug\net5.0\Showtime.Infra.Data.AssemblyInfo.cs
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\obj\Debug\net5.0\Showtime.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\obj\Debug\net5.0\Showtime.Infra.Data.csproj.CopyComplete
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\obj\Debug\net5.0\Showtime.Infra.Data.dll
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\obj\Debug\net5.0\ref\Showtime.Infra.Data.dll
+C:\Users\sarai\source\repos\showtimeAPI\Showtime.Infra.Data\obj\Debug\net5.0\Showtime.Infra.Data.pdb

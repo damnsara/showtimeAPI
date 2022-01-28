@@ -4,6 +4,8 @@ using System;
 using Showtime.Domain.Interfaces;
 using Showtime.Domain.Entities;
 using Showtime.Service.Validators;
+using Showtime.Service.Services;
+using System.Collections.Generic;
 
 namespace Showtime.API.Controllers
 {
@@ -11,11 +13,11 @@ namespace Showtime.API.Controllers
     [ApiController]
     public class ShowController : ControllerBase
     {
-        private IBaseService<Show> _baseShowService;
+        private readonly IShowService _showService;
 
-        public ShowController(IBaseService<Show> baseShowService)
+        public ShowController(IShowService showService)
         {
-            _baseShowService = baseShowService;
+            _showService = showService;
         }
 
         [HttpPost]
@@ -24,7 +26,7 @@ namespace Showtime.API.Controllers
             if (show == null)
                 return NotFound();
 
-            return Execute(() => _baseShowService.Add<ShowValidator>(show).Id);
+            return Execute(() => _showService.Add<ShowValidator>(show).Id);
         }
 
         [HttpPut]
@@ -33,7 +35,7 @@ namespace Showtime.API.Controllers
             if (show == null)
                 return NotFound();
 
-            return Execute(() => _baseShowService.Update<ShowValidator>(show).Id);
+            return Execute(() => _showService.Update<ShowValidator>(show).Id);
         }
 
         [HttpDelete("{id}")]
@@ -44,7 +46,7 @@ namespace Showtime.API.Controllers
 
             Execute(() =>
             {
-                _baseShowService.Delete(id);
+                _showService.Delete(id);
                 return true;
             });
 
@@ -54,7 +56,7 @@ namespace Showtime.API.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Execute(() => _baseShowService.Get());
+            return Execute(() => _showService.Get());
         }
 
         [HttpGet("{id}")]
@@ -63,7 +65,7 @@ namespace Showtime.API.Controllers
             if (id == 0)
                 return NotFound();
 
-            return Execute(() => _baseShowService.GetById(id));
+            return Execute(() => _showService.GetById(id));
         }
 
         private IActionResult Execute(Func<object> func)

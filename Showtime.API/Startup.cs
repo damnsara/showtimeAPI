@@ -14,6 +14,14 @@ using System.Threading.Tasks;
 using Showtime.Infra.Data;
 using Showtime.Infra.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
+using Showtime.Domain.Interfaces;
+using Showtime.Service.Services;
+using Showtime.Domain.Entities;
+using Showtime.Infra.Data.Repositories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Showtime.Service;
+using System.Text;
 
 namespace Showtime.API
 {
@@ -30,14 +38,38 @@ namespace Showtime.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SQLContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("SQLServerConn"))
-            ) ;
+            options.UseSqlServer(
+                Configuration.GetConnectionString("SQLServerConn"),
+                x => x.MigrationsAssembly("Showtime.API")));
 
+            services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddCors();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Showtime.API", Version = "v1" });
             });
+            var key = Encoding.ASCII.GetBytes(TokenService.SecretKey);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+                    .AddJwtBearer(x =>
+                    {
+                        x.RequireHttpsMetadata = false;
+                        x.SaveToken = true;
+                        x.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidateIssuerSigningKey = true,
+                            IssuerSigningKey = new SymmetricSecurityKey(key),
+                            ValidateIssuer = false,
+                            ValidateAudience = false
+                        };
+                    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +85,11 @@ namespace Showtime.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
             app.UseAuthorization();
 

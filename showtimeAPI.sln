@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Showtime.Infra.Data", "Show
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Showtime.Domain", "Showtime.Domain\Showtime.Domain.csproj", "{B45C8BA2-B65D-4792-A310-EC6995581B03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Showtime.Service", "Showtime.Service\Showtime.Service.csproj", "{A46C4998-92A0-4058-BE28-066B61CE0B32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Showtime.Service", "Showtime.Service\Showtime.Service.csproj", "{A46C4998-92A0-4058-BE28-066B61CE0B32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Showtime.Shared", "Showtime.Shared\Showtime.Shared.csproj", "{16601521-683D-4EF2-A0A3-84E91A911669}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A46C4998-92A0-4058-BE28-066B61CE0B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A46C4998-92A0-4058-BE28-066B61CE0B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A46C4998-92A0-4058-BE28-066B61CE0B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16601521-683D-4EF2-A0A3-84E91A911669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16601521-683D-4EF2-A0A3-84E91A911669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16601521-683D-4EF2-A0A3-84E91A911669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16601521-683D-4EF2-A0A3-84E91A911669}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
