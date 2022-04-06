@@ -17,13 +17,13 @@ namespace Showtime.API.Controllers
         [Route("login")]
         public async Task<ActionResult<dynamic>> Authenticate([FromBody] User model)
         {
-            var user = UserRepository.Get(model.username, model.password);
+            var user = UserRepository.Get(model.Username, model.Password);
 
             if (user == null)
                 return NotFound(new { message = "Usuário ou senha inválidos" });
 
             var token = TokenService.GenerateToken(user);
-            user.password = "";
+            user.Password = "";
             return new
             {
                 user = user,

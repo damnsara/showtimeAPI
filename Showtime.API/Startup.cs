@@ -22,6 +22,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Showtime.Service;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace Showtime.API
 {
@@ -41,11 +42,13 @@ namespace Showtime.API
             options.UseSqlServer(
                 Configuration.GetConnectionString("SQLServerConn"),
                 x => x.MigrationsAssembly("Showtime.API")));
-
+            services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IShowService, ShowService>();
+            services.AddScoped<IShowRepository, ShowRepository>();
             services.AddCors();
             services.AddControllers();
             services.AddSwaggerGen(c =>

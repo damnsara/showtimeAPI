@@ -23,7 +23,7 @@ namespace Showtime.API.Controllers
         [HttpGet("Login")]
         public IActionResult Login([FromBody] User user)
         {
-            var LoggedUser = _userService.Login(user.email, user.password);
+            var LoggedUser = _userService.Login(user.Email, user.Password);
             return Ok("Autenticado");
         }
 

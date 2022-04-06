@@ -8,13 +8,13 @@ namespace Showtime.Domain.Entities
 {
     public class User : BaseEntity
     {
-        public String username { get; set; }
+        public String Username { get; set; }
 
-        public String email { get; set; }
+        public String Email { get; set; }
 
-        public String password { get; set; }
+        public String Password { get; set; }
 
-        public String role { get; set; }
+        public String Role { get; set; }
 
     }
 }

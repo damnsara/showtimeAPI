@@ -14,14 +14,14 @@ namespace Showtime.Service.Validators
     {
         public UserValidator()
         {
-            RuleFor(u => u.username).NotEmpty().WithMessage(String.Format(Messages.FieldNotEmpty, "username"))
+            RuleFor(u => u.Username).NotEmpty().WithMessage(String.Format(Messages.FieldNotEmpty, "username"))
                     .NotNull().WithMessage(String.Format(Messages.FieldNotNull, "name"));
-            RuleFor(u => u.email).NotEmpty().WithMessage(String.Format(Messages.FieldNotEmpty, "e-mail"))
+            RuleFor(u => u.Email).NotEmpty().WithMessage(String.Format(Messages.FieldNotEmpty, "e-mail"))
                     .NotNull().WithMessage(String.Format(Messages.FieldNotNull, "e-mail"));
-            RuleFor(u => u.password).NotEmpty().WithMessage(String.Format(Messages.FieldNotEmpty, "password"))
+            RuleFor(u => u.Password).NotEmpty().WithMessage(String.Format(Messages.FieldNotEmpty, "password"))
                     .NotNull().WithMessage(String.Format(Messages.FieldNotNull, "password"))
                     .MinimumLength(8).WithMessage(String.Format(Messages.MoreThan8, "password"));
-            RuleFor(u => u.role).NotEmpty().WithMessage(String.Format(Messages.FieldNotEmpty, "role"))
+            RuleFor(u => u.Role).NotEmpty().WithMessage(String.Format(Messages.FieldNotEmpty, "role"))
                     .NotNull().WithMessage(String.Format(Messages.FieldNotNull, "role"));
         }
     }

@@ -56,6 +56,7 @@ namespace Showtime.API.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            var show = _showService.Get();
             return Execute(() => _showService.Get());
         }
 

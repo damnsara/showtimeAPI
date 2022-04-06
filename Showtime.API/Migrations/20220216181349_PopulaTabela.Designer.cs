@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Showtime.Infra.Data.Contexts;
 
 namespace Showtime.API.Migrations
 {
     [DbContext(typeof(SQLContext))]
-    partial class SQLContextModelSnapshot : ModelSnapshot
+    [Migration("20220216181349_PopulaTabela")]
+    partial class PopulaTabela
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -81,22 +83,22 @@ namespace Showtime.API.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Email")
+                    b.Property<string>("email")
                         .IsRequired()
                         .HasColumnType("varchar(100)")
                         .HasColumnName("E-mail");
 
-                    b.Property<string>("Password")
+                    b.Property<string>("password")
                         .IsRequired()
                         .HasColumnType("varchar(100)")
                         .HasColumnName("password");
 
-                    b.Property<string>("Role")
+                    b.Property<string>("role")
                         .IsRequired()
                         .HasColumnType("varchar(15)")
                         .HasColumnName("role");
 
-                    b.Property<string>("Username")
+                    b.Property<string>("username")
                         .IsRequired()
                         .HasColumnType("varchar(100)")
                         .HasColumnName("Name");
@@ -104,32 +106,6 @@ namespace Showtime.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 10,
-                            Email = "buzz@gmail.com",
-                            Password = "infinitybeyond",
-                            Role = "admin",
-                            Username = "Buzz Lightyear"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            Email = "selinakyle@gmail.com",
-                            Password = "meow1234",
-                            Role = "admin",
-                            Username = "Catwoman"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            Email = "wandavision@gmail.com",
-                            Password = "sokovia",
-                            Role = "admin",
-                            Username = "WandaMaximoff"
-                        });
                 });
 #pragma warning restore 612, 618
         }
