@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tXtDSw7YdpARGHfm0tw2vzn3ghhs6u+t+WT7i0QBi0Usv1G6Eb5B65kjqUVvUZPLPaY10+UNqaU6htGX8TFWdA==",
+  "dgSpecHash": "KwTtxpfYLqoSjHIRU5+bDtrfaKD5SV/Qe5jRaaYMBx8hdayd38XvuasAnhaGepzoNPXlzRR6doH40+2tUeGSrg==",
   "success": true,
   "projectFilePath": "C:\\Users\\sarai\\source\\repos\\showtimeAPI\\Showtime.API\\Showtime.API.csproj",
   "expectedPackageFiles": [
@@ -129,7 +129,8 @@
     "C:\\Users\\sarai\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\sarai\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\sarai\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\sarai\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\sarai\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\sarai\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }
